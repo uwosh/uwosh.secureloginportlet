@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="uwosh.secureloginportlet.secureloginportlet.SecureLoginPortlet"
+   title="Secure Login Portlet"
+   description="A login portlet that forces SSL/HTTPS posting"
+   />
+
+</portlets>

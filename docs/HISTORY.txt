@@ -1,0 +1,19 @@
+Changelog
+=========
+
+0.1.4 (2011-08-28) [tkimnguyen]
+-------------------------------
+
+- Add uninstall profile
+
+
+0.1.3 (2011-08-28) [tkimnguyen]
+-------------------------------
+
+- Adds layer to all skins
+
+
+0.1.2 (2011-08-11) [tkimnguyen]
+-------------------------------
+
+- Initial release

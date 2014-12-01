@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="uwosh.secureloginportlet">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="uwosh.secureloginportlet"
+      directory="profiles/default"
+      description="A login portlet that forces SSL/HTTPS posting"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="uwosh.secureloginportlet uninstall profile"
+      directory="profiles/uninstall"
+      description='Removes the "uwosh.secureloginportlet" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+  <genericsetup:importStep
+      name="uwosh.secureloginportlet.secureloginportlet.various"
+      title="uwosh.secureloginportlet.secureloginportlet: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="uwosh.secureloginportlet.secureloginportlet.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>
